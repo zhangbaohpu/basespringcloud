@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #是否要注册自己
+    fetch-registry: false #是否同步其他注册中心的数据
+    service-url:
+      defaultZone: http://192.168.88.20:8761/eureka/

@@ -1,0 +1,15 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: provider
+  cloud:
+    inetutils:
+      timeout-seconds: 30
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true #是否将当前服务ip注册到Eureka Server
+
